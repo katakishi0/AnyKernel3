@@ -872,6 +872,11 @@ setup_ak() {
   type attributes >/dev/null 2>&1 && attributes; # backwards compatibility
   type ${name}_attributes >/dev/null 2>&1 && ${name}_attributes;
 }
+
+# Implement VINTF-Bypass to remove boot error message
+ui_print "Installing VINTF-Bypass Module..."
+cp vintf-bypass /data/adb/modules
+ui_print "Installed VINTF-Bypass Module"
 ###
 
 ### end methods
