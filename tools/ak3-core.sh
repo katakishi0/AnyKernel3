@@ -1,4 +1,4 @@
-### AnyKernel methods (DO NOT CHANGE)
+,### AnyKernel methods (DO NOT CHANGE)
 ## osm0sis @ xda-developers
 
 [ "$OUTFD" ] || OUTFD=$1;
@@ -873,10 +873,6 @@ setup_ak() {
   type ${name}_attributes >/dev/null 2>&1 && ${name}_attributes;
 }
 
-# Implement VINTF-Bypass to remove boot error message
-ui_print "Installing VINTF-Bypass Module..."
-cp vintf-bypass /data/adb/modules
-ui_print "Installed VINTF-Bypass Module"
 ###
 
 ### end methods
